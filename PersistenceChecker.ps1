@@ -1,20 +1,3 @@
-
----
-
-## 📸 Screenshots to Include
-
-1. **Script Execution**: PowerShell console showing the script running
-2. **Sample Output**: Highlighted suspicious findings
-3. **Report File**: The generated text file opened in notepad
-4. **Detection Examples**: Side-by-side comparison of normal vs suspicious
-
----
-
-## 🏆 Portfolio Entry Description
-
-```markdown
-# Windows Persistence Scanner - SOC Automation Project
-
 ## Project Overview
 As part of my role as a Junior SOC Analyst, I identified a need for automated persistence mechanism detection during initial incident response. I developed this PowerShell tool to streamline the triage process and ensure consistent investigation coverage.
 
@@ -60,4 +43,5 @@ I created a comprehensive PowerShell script that automatically checks:
 - Create HTML report output
 - Add remote system scanning capability
 - Integrate with SIEM APIs
+
 
