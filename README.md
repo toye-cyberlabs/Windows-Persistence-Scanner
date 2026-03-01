@@ -7,3 +7,61 @@ A Powershell script thats helps security analysts quickly identify potential ind
 - `docs/` – documentation and sample outputs
 - `examples/` – example detection scenarios
 - `LICENSE` – project license
+
+# 🛡️ Windows Persistence Scanner - SOC Analyst Tool
+
+[![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-blue)](https://github.com/PowerShell/PowerShell)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![SOC Analyst](https://img.shields.io/badge/Role-SOC%20Analyst-red)]()
+
+A comprehensive PowerShell script designed for Security Operations Center (SOC) analysts to detect common malware persistence mechanisms on Windows systems. This tool automates the initial triage process during incident response investigations.
+
+## 🎯 Purpose
+
+As a Junior SOC Analyst, I created this tool to:
+- Automate the detection of common persistence mechanisms used by malware
+- Speed up initial incident response triage
+- Provide clear, actionable output for investigation reports
+- Learn and understand Windows internals and attacker techniques
+
+## 🔍 Features
+
+- **Process Enumeration**: Lists top CPU-consuming processes and flags suspicious ones
+- **Registry Analysis**: Checks multiple Run keys and autostart locations
+- **Scheduled Tasks**: Enumerates all enabled tasks with detailed information
+- **Additional Checks**:
+  - Startup folders (User and System)
+  - WMI Event Subscriptions
+  - Auto-start Services
+  - Browser Helper Objects
+  - AppInit_DLLs configuration
+
+## 📊 Detection Coverage
+
+This script detects persistence mechanisms mapped to MITRE ATT&CK techniques:
+- **T1547.001**: Registry Run Keys / Startup Folder
+- **T1053.005**: Scheduled Task
+- **T1546.003**: WMI Event Subscription
+- **T1543.003**: Windows Service
+- **T1547.004**: Winlogon Helper DLL
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Windows 10/11 or Windows Server 2016+
+- PowerShell 5.1 or higher
+- Administrative privileges
+
+### Installation
+
+```powershell
+# Clone the repository
+git clone https://github.com/yourusername/Windows-Persistence-Scanner.git
+
+# Navigate to directory
+cd Windows-Persistence-Scanner
+
+# Run the scanner
+.\PersistenceChecker.ps1
+
+
