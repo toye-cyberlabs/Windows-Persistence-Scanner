@@ -63,5 +63,3 @@ cd Windows-Persistence-Scanner
 
 # Run the scanner
 .\PersistenceChecker.ps1
-
-
