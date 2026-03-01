@@ -1,10 +1,45 @@
-## PowersShell
+# Real-World Detection Examples
 
-# Basic scan
-.\PersistenceChecker.ps1
+## Example 1: Coin Miner Persistence
 
-# Save output to custom location
-.\PersistenceChecker.ps1 -OutputPath "C:\Reports\scan_$(Get-Date -Format 'yyyyMMdd').txt"
+**Scheduled Task Detected:**
 
-# Run with verbose logging
-.\PersistenceChecker.ps1 -Verbose
+
+Task Name: ChromeUpdateTask
+Path: \Microsoft\Windows
+Execute: C:\Users\Public\svchost.exe
+Arguments: --miner --pool xmr.pool.com
+State: Running
+
+
+**Analysis:** 
+- Masquerading as Chrome update
+- Running from Public folder (unusual)
+- Arguments indicate cryptocurrency mining
+
+**Recommended Actions:**
+1. Kill the process
+2. Disable the scheduled task
+3. Remove the executable
+4. Check for additional miner components
+
+---
+
+## Example 2: Registry Run Key Backdoor
+
+**Registry Entry Found:**
+
+Path: HKLM\Software\Microsoft\Windows\CurrentVersion\Run
+Name: WindowsDefender
+Value: powershell -WindowStyle Hidden -Enc SQBFAFgAKABOAGUAd...
+
+Recommended Actions:
+
+Remove registry entry
+
+Check network connections
+
+Analyze downloaded payload
+
+Check for other encoded PowerShell artifacts
+
