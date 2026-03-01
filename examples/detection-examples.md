@@ -35,11 +35,12 @@ Value: powershell -WindowStyle Hidden -Enc SQBFAFgAKABOAGUAd...
 
 Recommended Actions:
 
-Remove registry entry
+1.Remove registry entry
 
-Check network connections
+2. Check network connections
 
-Analyze downloaded payload
+3.  Analyze downloaded payload
 
-Check for other encoded PowerShell artifacts
+4. Check for other encoded PowerShell artifacts
+
 
