@@ -125,7 +125,7 @@ cd Windows-Persistence-Scanner
 
 This project was independently designed, configured, and documented by Toye as part of hands-on networking and cybersecurity practice.
 
-All configurations, topology design, IP planning, and testing were implemented in a controlled lab environment.
+All testing were implemented in a controlled lab environment.
 
 
 ## 👥 Contributors
