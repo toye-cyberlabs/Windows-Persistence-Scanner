@@ -119,7 +119,7 @@ cd Windows-Persistence-Scanner
 - GitHub: https://toye-cyberlabs.github.io  
 - LinkedIn: www.linkedin.com/in/adewale-adetoye-elemoro-662b44299 
 - Portfolio: https://toye-cyberlabs.github.io  
-- Focus: Secure network design, routing configuration, infrastructure labs  
+
 
 ## 📌 Project Ownership
 
